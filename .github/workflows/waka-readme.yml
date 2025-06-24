@@ -1,7 +1,6 @@
 name: Waka Readme
 
 on:
-  # Запуск вручную и по расписанию (раз в сутки в 3:00 по Москве)
   workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
@@ -20,7 +19,7 @@ jobs:
           SECTION_NAME: wakatime
           BLOCKS: "█▓▒░"
           CODE_LANG: txt
-          TIME_RANGE: last_30_days
+          TIME_RANGE: last_7_days
           LANG_COUNT: 7
           SHOW_TIME: true
           SHOW_TOTAL: true

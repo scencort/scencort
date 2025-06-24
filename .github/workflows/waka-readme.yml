@@ -19,8 +19,8 @@ jobs:
           SECTION_NAME: wakatime
           BLOCKS: "░▒▓█"
           CODE_LANG: python
-          TIME_RANGE: last_30_days
-          LANG_COUNT: 7
+          TIME_RANGE: all_time
+          LANG_COUNT: 10
           SHOW_TIME: true
           SHOW_TOTAL: true
           SHOW_MASKED_TIME: true

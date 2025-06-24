@@ -7,29 +7,30 @@ on:
 
 jobs:
   update-readme:
-    name: WakaReadme Stats
+    name: WakaReadme DevMetrics
     runs-on: ubuntu-latest
     steps:
       - uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          # --- meta
           API_BASE_URL: https://wakatime.com/api
           REPOSITORY: scencort/scencort
-          SHOW_TITLE: false
-          SECTION_NAME: wakatime
+          # --- content
+          SHOW_TITLE: true
+          SECTION_NAME: waka
           BLOCKS: "░▒▓█"
-          CODE_LANG: python
+          CODE_LANG: txt
           TIME_RANGE: all_time
           LANG_COUNT: 10
           SHOW_TIME: true
           SHOW_TOTAL: true
-          SHOW_MASKED_TIME: true
+          SHOW_MASKED_TIME: false
           STOP_AT_OTHER: false
-          IGNORED_LANGUAGES: Binary YAML TOML
           COMMIT_MESSAGE: Updated waka-readme graph with new metrics
-          TARGET_BRANCH: main
+          TARGET_BRANCH: master
           TARGET_PATH: README.md
-          COMMITTER_NAME: WakaBot
-          COMMITTER_EMAIL: wakabot@users.noreply.github.com
+          COMMITTER_NAME: GitHubActionBot
+          COMMITTER_EMAIL: action-bot@github.com
           AUTHOR_NAME: scencort
           AUTHOR_EMAIL: homeworkyar@gmail.com

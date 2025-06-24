@@ -13,7 +13,7 @@ jobs:
       - uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          API_BASE_URL: https://wakapi.dev/api
+          API_BASE_URL: https://wakatime.com/api
           REPOSITORY: scencort/scencort
           SHOW_TITLE: false
           SECTION_NAME: wakatime

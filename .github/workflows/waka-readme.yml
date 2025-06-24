@@ -1,35 +1,17 @@
 name: Waka Readme
 
 on:
+  # for manual workflow trigger
   workflow_dispatch:
   schedule:
+    # runs at 12 AM UTC (5:30 AM IST)
     - cron: "0 0 * * *"
 
 jobs:
   update-readme:
-    name: WakaReadme Stats
+    name: WakaReadme DevMetrics
     runs-on: ubuntu-latest
     steps:
-      - uses: athul/waka-readme@master
+      - uses: athul/waka-readme@master # this action name
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          API_BASE_URL: https://wakatime.com/api
-          REPOSITORY: scencort/scencort
-          SHOW_TITLE: false
-          SECTION_NAME: wakatime
-          BLOCKS: "█▓▒░"
-          CODE_LANG: txt
-          TIME_RANGE: last_7_days
-          LANG_COUNT: 7
-          SHOW_TIME: true
-          SHOW_TOTAL: true
-          SHOW_MASKED_TIME: true
-          STOP_AT_OTHER: false
-          IGNORED_LANGUAGES: JSON TOML Markdown
-          COMMIT_MESSAGE: "Обновление waka-readme статистики ⏱️"
-          TARGET_BRANCH: main
-          TARGET_PATH: README.md
-          COMMITTER_NAME: scencort-bot
-          COMMITTER_EMAIL: scencort-bot@users.noreply.github.com
-          AUTHOR_NAME: scencort
-          AUTHOR_EMAIL: scencort@users.noreply.github.com

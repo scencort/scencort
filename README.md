@@ -1,13 +1,13 @@
 <!--START_SECTION:waka-->
 
 ```txt
-From: 23 June 2025 - To: 26 June 2025
+From: 23 June 2025 - To: 27 June 2025
 
-Total Time: 1 hr 24 mins
+Total Time: 2 hrs 15 mins
 
-C      1 hr 20 mins    ████████████████████████░   95.79 %
-Java   3 mins          █░░░░░░░░░░░░░░░░░░░░░░░░   03.96 %
-Text   0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.25 %
+C      2 hrs 10 mins   ████████████████████████░   95.93 %
+Java   3 mins          ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.45 %
+Text   2 mins          ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.62 %
 ```
 
 <!--END_SECTION:waka-->
